@@ -1,11 +1,24 @@
-## Scraping Notes & Limitations
+# SaaS Review Scraper
 
-Some platforms may restrict automated requests or change HTML structure.
-This implementation demonstrates:
-- Correct scraping logic
-- Pagination handling
-- Date-based filtering
-- Production-ready structure
+A clean, CLI-based Python tool to scrape SaaS product reviews from multiple platforms
+(G2, Capterra, TrustRadius) within a given date range.
 
-If a source blocks requests, the script fails gracefully without crashing.
-Sample output is included for reference.
+Designed as a take-home assignment to demonstrate real-world scraping logic,
+pagination handling, and production-oriented code structure.
+
+## Why this project?
+
+Scraping SaaS reviews involves real-world challenges such as:
+- Platform-specific HTML structures
+- Pagination with unknown page limits
+- Rate limits and bot protection
+- Inconsistent date formats
+
+This project focuses on **design clarity and robustness**, not brute-force scraping.
+
+## Design Decisions
+
+- Modular scraper per source to allow easy extension
+- Date-based early stopping to avoid unnecessary requests
+- Unified output schema across all platforms
+- Graceful failure handling instead of hard crashes

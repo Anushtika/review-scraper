@@ -22,3 +22,10 @@ This project focuses on **design clarity and robustness**, not brute-force scrap
 - Date-based early stopping to avoid unnecessary requests
 - Unified output schema across all platforms
 - Graceful failure handling instead of hard crashes
+
+## Future Improvements
+
+- Async requests for faster scraping
+- Proxy rotation and retry logic
+- Headless browser support for JS-rendered pages
+- API service using FastAPI
